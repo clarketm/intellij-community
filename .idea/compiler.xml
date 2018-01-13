@@ -4,7 +4,6 @@
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1100" />
     <excludeFromCompile>
       <file url="file://$PROJECT_DIR$/jps/jps-builders-6/src/org/jetbrains/jps/javac/OptimizedFileManager.java" />
@@ -26,13 +25,17 @@
       <entry name="!*.gant" />
     </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-runtime" target="1.2" />
       <module name="junit_rt" target="1.2" />
+      <module name="maven" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="EclipseCompilerSettings">
@@ -44,7 +47,7 @@
     <option name="DEPRECATION" value="false" />
   </component>
   <component name="JavacSettings">
-    <option name="PREFER_TARGET_JDK_COMPILER" value="false"/>
+    <option name="PREFER_TARGET_JDK_COMPILER" value="false" />
     <option name="MAXIMUM_HEAP_SIZE" value="400" />
   </component>
 </project>
