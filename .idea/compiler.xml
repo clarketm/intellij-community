@@ -35,7 +35,7 @@
     <bytecodeTargetLevel>
       <module name="java-runtime" target="1.2" />
       <module name="junit_rt" target="1.2" />
-      <module name="maven" target="1.5" />
+      <module name="maven" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="EclipseCompilerSettings">
